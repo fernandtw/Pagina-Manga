@@ -1,0 +1,1166 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*HEADER*/
+
+header{
+    background-color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color:#A555EC;
+
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.header ul li{
+    transition: 1s;
+
+}
+
+.header ul li:hover{
+    background-image: 
+    linear-gradient(#ADA2FF, #C0DEFF);
+    transform: scale(1,1,1);
+    
+
+}
+
+/*MAIN INDEX*/
+
+/*TITULO PRINCIPAL*/
+
+.title_anime{
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    color:black;
+    padding-right:150px;
+    transition: 1s;
+
+}
+
+.title_anime:hover{
+    transform: scale(1,1,1);
+    color: #4B56D2;
+}
+
+
+
+
+
+.span_color{
+
+    color: #4C0033 ;
+
+}
+
+/*INICIO PAGINA PRINCIPAL*/
+
+.contenedor__informacion{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:black;
+    padding-right: 150px;
+    margin: 20px;
+
+}
+
+.anime{
+    background-image: url(../ASSETS/fondo_index.jpg);
+    /* width ancho en ingles */
+    /*height largo en ingles */
+    background-attachment: fixed;
+    display: flex;
+    background-repeat:no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+
+
+}
+
+.contenedor_principal{
+    padding:60px;
+}
+
+
+.cards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
+
+
+.card:hover{
+    background-image: linear-gradient(#efa3c8ee, #f4d9e7);
+    transform: scale(1,1,1);
+
+}
+
+.card{
+    transition: 1s;
+}
+
+
+
+/*IMAGENES Y FONDOS PRINCIPALES*/
+
+.animemanga div img{
+    width:400px;
+    height:450px;
+    padding:30px;
+    object-fit: cover;
+
+}
+
+.animemanga{
+    background-color: #000000;
+}
+
+
+/*ESTILOS TEXTOS CARDS*/
+
+
+.title_card{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    color:#ffffff;
+    padding-right:150px;
+    text-align: center;
+}
+
+
+.contenedor__p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+    padding-right: 150px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.card_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:#ffffff;
+    padding-right: 150px;
+    margin: 20px;
+
+}
+
+.compra{
+
+    color: #4B56D2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    background-color: #ffffff;
+    align-self: flex-end;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+
+
+}
+
+.compra:hover{
+    color: #000000;
+    background-color: #ADA2FF;
+    transform: scale(1,1,1);
+}
+
+
+
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+    background-image: url(../ASSETS/fondo_index.jpg);
+    background-attachment: fixed;
+    display: flex;
+    background-repeat:no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    padding: 15px;
+    display: flex;
+
+
+}
+
+/*FUENTES PIE DE PAGINA*/
+
+footer h4{
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+}
+
+footer h4 span{
+    color: #3F0071;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+}
+
+footer a {
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+}
+footer li{
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    color:#6D67E4;
+    text-align:initial;
+    padding-right: 50px;
+    margin: 15px ;
+
+}
+
+/*Productos*/
+
+.mangas{
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-repeat:no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width:100%;
+    height:260vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+
+}
+
+
+
+/* TITULOS H2 PRODUCTOS */
+
+
+
+.title_producto{
+    color: #000000;
+    background-image: url(../ASSETS/fondo_index.jpg);
+    background-repeat:no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.title__products{
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 15px;
+    margin: 10px;
+
+
+}
+
+/* PARRAFOS-PRECIOS */
+
+.mangas p{
+    font-family: 'Roboto', cursive;
+    font-size: 15px;
+    color:#ffffff;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+
+
+/* IMAGENES PRODUCTOS */
+
+.box img{
+    width:200px;
+    height:300px;
+    padding:20px;
+    object-fit: cover;
+
+
+}
+
+/*SECCION QUIENES SOMOS*/
+
+/*FONDO*/
+.QuienesSomos{
+    background-color: #000000;
+    text-align: center;
+    background-attachment: fixed;
+    display: grid;
+    background-repeat:no-repeat;
+    background-position: center ;
+    background-size: cover;
+    padding: 10px;
+    width: 100%;
+    height: 120vh;
+
+}
+
+.Grilla_QuienesSomos{
+    display: grid;
+    padding: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'area1 area2 area3'
+    'area4 area5 area6';
+}
+
+.imagen{
+    width: 400px;
+    height: 400px;
+}
+
+.imagen img{
+    width: 100%;
+    height:100%;
+}
+
+.g1{
+    grid-area: area1;
+}
+
+.g2{
+    grid-area: area2;
+}
+
+.g3{
+    grid-area: area3;
+}
+
+.g4{
+    grid-area: area4;
+}
+
+.g5{
+    grid-area: area5;
+}
+
+.g6{
+    grid-area: area6;
+}
+
+.Grilla_QuienesSomos img {
+    transform:scale(1);
+    transition: 0.5s;
+}
+
+.Grilla_QuienesSomos img:hover {
+    transform:scale(1.1);
+}
+
+/*TEXTO QUIENES SOMOS*/
+
+.Grilla_QuienesSomos p{
+    font-family: 'Roboto', cursive;
+    font-size: 18px;
+    color: #ffffff;
+    text-align:justify;
+    margin: 15px;
+    padding: 10px;
+
+}
+/*FUENTES-PRODUCTOS*/
+
+.title_1{
+
+    background-image: url(../ASSETS/fondo_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    text-align: center;
+
+}
+
+.contenedor_texto{
+
+    background-color: #000000;
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
+    color:#ffffff;
+    text-align: justify;
+    padding-right: 150px;
+    margin: 20px;
+
+
+
+}
+
+
+/*CONTACTO*/
+
+.contacto{
+
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: start;
+    color: #ffffff;
+    padding: 10px;
+
+
+
+
+}
+
+/*BOTONES Y CAJAS DE TEXTO*/
+
+.contacto input{
+    background-color: #ffffff;
+    border-radius: 2%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    
+
+}
+
+.botones input{
+
+    background-color: #ADA2FF;
+    border-radius: 2%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+
+}
+
+
+.contacto textarea{
+    border: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+
+}
+
+/*CONTACTO FUENTES*/
+
+.contacto p{
+    
+    background-color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+
+
+/*RESPONSIVE WEB 320PX*/
+
+/*INICIO CELULAR*/
+
+@media only screen and (max-width:320px){
+
+
+
+/*HEADER BARRA*/
+
+    .header ul{
+        
+        font-size: 15px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+        
+        
+    }
+
+/*INDEX INICIO*/
+
+    .anime{
+        
+        width:100%;
+        height:auto;
+        
+        
+        
+        
+    }
+
+    
+
+
+    .title_anime{
+
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;   
+        padding: 0px;
+        margin: 10px;
+
+    }
+
+
+    .contenedor__informacion{
+        font-size: 17px;
+        text-align: left;
+        padding: 10px;
+        line-height: 27px;
+        margin: 0px;
+    }
+
+
+/*PRODUCTOS*/
+        
+
+
+/*IMAGENES Y FONDOS PRINCIPALES*/
+
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        height: 500px;
+    }
+
+    .animemanga div img{
+        width:200px;
+        height:250px;
+        padding:10px;
+        object-fit: cover;
+    }
+
+
+
+/*ESTILOS TEXTOS CARDS*/
+
+
+    .title_card{
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+    .contenedor__p{
+        font-size: 15px;
+        color: #ffffff;
+        text-align: justify;
+        margin: 20px;
+        
+    }
+
+    .card_title {
+        font-size: 20px;
+        color: #ffffff;
+
+    }
+
+    .compra{
+        align-self: flex-end;
+        font-size: 15px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/*QUIENES SOMOS*/
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+
+@media only screen and (min-width:321px){
+
+
+
+    /*HEADER BARRA*/
+    
+    .header ul{
+        
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    /*INDEX INICIO*/
+    
+    .anime{
+
+        width:100%;
+        height:500px;
+    }
+    
+        
+    
+    
+    .title_anime{
+    
+        font-size: 40px;   
+        padding: 0px;
+        margin: 10px;
+    
+    }
+    
+    
+    .contenedor__informacion{
+        text-align: left;
+        font-size: 20px;
+        line-height: 27px;
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    
+    /*ESTILOS TEXTOS CARDS*/
+    
+    /*PRODUCTOS*/
+        
+    
+    
+    /*IMAGENES Y FONDOS PRINCIPALES*/
+    
+    
+    .cards{
+        flex-direction: column;
+    }
+    
+    .card{
+        height: 500px;
+    }
+    
+    .animemanga div img{
+        width:250px;
+        height:300px;
+        padding:10px;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .title_card{
+        font-size: 35px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    
+    .contenedor__p{
+        font-size: 15px;
+        color: #ffffff;
+        text-align: justify;
+        margin: 20px;
+            
+    }
+    
+    .card_title {
+        font-size: 22px;
+        color: #ffffff;
+        margin: 10px;
+    
+    }
+    
+    .compra{
+        align-self: flex-end;
+        font-size: 15px;
+    }
+    
+}
+    
+
+
+@media only screen and (min-width:480px){
+
+
+
+    /*HEADER BARRA*/
+    
+    .header ul li{
+        
+        font-size: 25px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    /*INDEX INICIO*/
+    
+    .anime{
+
+        width:100%;
+        height:500px;
+    }
+    
+        
+    
+    
+    .title_anime{
+    
+        font-size: 50px;   
+        padding: 0px;
+        margin: 10px;
+    
+    }
+    
+    
+    .contenedor__informacion{
+        text-align: left;
+        font-size: 25px;
+        line-height: 27px;
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    
+    /*ESTILOS TEXTOS CARDS*/
+    
+    /*PRODUCTOS*/
+        
+    
+    
+    /*IMAGENES Y FONDOS PRINCIPALES*/
+    
+    
+    .cards{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    
+    .card{
+        height: 60%;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .animemanga div img{
+        width:380px;
+        height:400px;
+        padding:10px;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .title_card{
+        font-size: 45px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    
+    .contenedor__p{
+        font-size: 15px;
+        color: #ffffff;
+        text-align: justify;
+        margin: 20px;
+            
+    }
+    
+    .card_title {
+        font-size: 20px;
+        color: #ffffff;
+        margin: 10px;
+    
+    }
+    
+    .compra{
+        align-self: flex-end;
+        font-size: 15px;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+/*SECCION RESPONSIVE QUIENES SOMOS*/
+
+
+
+@media only screen and (min-width:320px){
+
+
+
+    .header ul{
+        
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+        
+        
+    }
+
+    .title_1{
+        font-size:40px;
+    }
+
+    .QuienesSomos{
+        background-color: #000000;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: center ;
+        background-size: cover;
+        padding: 10px;
+        width: 100%;
+        height: 290vh;
+    
+    }
+    
+    .Grilla_QuienesSomos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagen{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+
+    .Grilla_QuienesSomos p{
+
+        font-size: 18px;
+        text-align: center;
+    
+    }
+
+}
+
+
+@media only screen and (min-width:360px){
+    
+    .header ul{
+        
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+        
+        
+    }
+
+    .title_1{
+        font-size:40px;
+    }
+
+    .QuienesSomos{
+        background-color: #000000;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: center ;
+        background-size: cover;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .Grilla_QuienesSomos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagen{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+
+    .Grilla_QuienesSomos p{
+
+        font-size: 20px;
+        text-align: center;
+    
+    }
+}
+
+
+
+
+@media only screen and (min-width:480px){
+
+
+
+    .header ul li{
+        
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+        
+        
+    }
+
+    .title_1{
+        font-size:50px ;
+    }
+
+    .QuienesSomos{
+        background-color: #000000;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: center ;
+        background-size: cover;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .Grilla_QuienesSomos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagen{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+
+    .Grilla_QuienesSomos p{
+
+        font-size: 25px;
+    
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:720px){
+
+
+
+    .header ul li{
+        
+        font-size: 30px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+        
+        
+    }
+
+    .title_1{
+        font-size:70px ;
+    }
+
+    .QuienesSomos{
+        background-color: #000000;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: center ;
+        background-size: cover;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .Grilla_QuienesSomos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagen{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+
+    .Grilla_QuienesSomos p{
+
+        font-size: 30px;
+    
+    }
+
+}
+
+
+
+@media only screen and (min-width:1020px){
+
+
+
+    .header ul li{
+        
+        font-size: 40px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+        
+        
+    }
+
+    .title_1{
+        font-size:70px ;
+    }
+
+    .QuienesSomos{
+        background-color: #000000;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: center ;
+        background-size: cover;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .Grilla_QuienesSomos{
+        display: grid;
+    }
+    
+    .imagen{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+
+    .Grilla_QuienesSomos p{
+
+        font-size: 30px;
+    
+    }
+
+}
+
+
+
+
+
+
