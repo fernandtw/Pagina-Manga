@@ -37,6 +37,10 @@ nav ul li{
 
 }
 
+nav ul{
+    margin: 0;
+}
+
 .header ul li{
     transition: 1s;
 
@@ -110,6 +114,7 @@ nav ul li{
     padding:60px;
 }
 
+/**
 
 .cards{
     display: flex;
@@ -131,7 +136,7 @@ nav ul li{
 
 
 
-/*IMAGENES Y FONDOS PRINCIPALES*/
+
 
 .animemanga div img{
     width:400px;
@@ -146,7 +151,6 @@ nav ul li{
 }
 
 
-/*ESTILOS TEXTOS CARDS*/
 
 
 .title_card{
@@ -198,6 +202,57 @@ nav ul li{
     color: #000000;
     background-color: #ADA2FF;
     transform: scale(1,1,1);
+}
+
+
+**/
+
+
+/*PRODUCTOS CON BTS*/
+
+
+
+
+
+.container{
+    max-width: 100%;
+    height: 100%;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+}
+.title-producto-bts{
+    font-size: 70px;
+    font-family:'Bebas Neue', cursive;
+}
+
+.card{
+    min-width: 265px;
+    max-width: 330px;
+}
+.card .card-text{
+    width: 100%;;
+}
+.card img{
+    height: 400px;
+}
+.card .card-body{
+    min-height: 170px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.card .btn{
+    height: 40px;
+}
+
+
+
+.row>*{
+    width: auto;
 }
 
 
@@ -544,8 +599,6 @@ footer li{
         
     }
 
-    
-
 
     .title_anime{
 
@@ -565,60 +618,20 @@ footer li{
         margin: 0px;
     }
 
-
-/*PRODUCTOS*/
-        
-
-
-/*IMAGENES Y FONDOS PRINCIPALES*/
-
-
-    .cards{
-        flex-direction: column;
-    }
-
-    .card{
-        height: 500px;
-    }
-
-    .animemanga div img{
-        width:200px;
-        height:250px;
-        padding:10px;
-        object-fit: cover;
-    }
-
-
-
-/*ESTILOS TEXTOS CARDS*/
-
-
-    .title_card{
+    .title-producto-bts{
         font-size: 30px;
-        text-align: center;
-        padding: 10px;
-
     }
 
-
-    .contenedor__p{
-        font-size: 15px;
-        color: #ffffff;
-        text-align: justify;
-        margin: 20px;
-        
-    }
-
-    .card_title {
+    .card-title{
         font-size: 20px;
-        color: #ffffff;
-
     }
 
-    .compra{
-        align-self: flex-end;
+    .card-text{
         font-size: 15px;
     }
+
+/*FOOTER*/
+
 
     .footer{
         width: 100%;
@@ -626,18 +639,6 @@ footer li{
     }
 
 }
-
-/*QUIENES SOMOS*/
-
-
-
-
-
-
-/*FOOTER*/
-
-
-
 
 @media only screen and (min-width:321px){
 
@@ -682,61 +683,20 @@ footer li{
         margin: 0px;
         padding: 10px;
     }
-    
-    
-    /*ESTILOS TEXTOS CARDS*/
-    
-    /*PRODUCTOS*/
-        
-    
-    
-    /*IMAGENES Y FONDOS PRINCIPALES*/
-    
-    
-    .cards{
-        flex-direction: column;
-    }
-    
-    .card{
-        height: 500px;
-    }
-    
-    .animemanga div img{
-        width:250px;
-        height:300px;
-        padding:10px;
-        object-fit: cover;
-    }
-    
-    
-    
-    
-    .title_card{
+
+    .title-producto-bts{
         font-size: 35px;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    
-    .contenedor__p{
-        font-size: 15px;
-        color: #ffffff;
-        text-align: justify;
-        margin: 20px;
-            
-    }
-    
-    .card_title {
-        font-size: 22px;
-        color: #ffffff;
-        margin: 10px;
     
     }
-    
-    .compra{
-        align-self: flex-end;
-        font-size: 15px;
+
+    .card-title{
+        font-size: 20px;
     }
+
+    .card-text{
+        font-size: 17px;
+    }
+    
     
 }
     
@@ -785,75 +745,94 @@ footer li{
         margin: 0px;
         padding: 10px;
     }
-    
-    
-    /*ESTILOS TEXTOS CARDS*/
-    
-    /*PRODUCTOS*/
-        
-    
-    
-    /*IMAGENES Y FONDOS PRINCIPALES*/
-    
-    
-    .cards{
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: stretch;
+
+    .title-producto-bts{
+        font-size: 50px;
     }
     
-    .card{
-        height: 60%;
-        padding: 20px;
-        margin: 20px;
-    }
-    
-    .animemanga div img{
-        width:380px;
-        height:400px;
-        padding:10px;
-        object-fit: cover;
-    }
-    
-    
-    
-    
-    .title_card{
-        font-size: 45px;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    
-    .contenedor__p{
-        font-size: 15px;
-        color: #ffffff;
-        text-align: justify;
-        margin: 20px;
-            
-    }
-    
-    .card_title {
+    .card-title{
         font-size: 20px;
-        color: #ffffff;
-        margin: 10px;
-    
     }
-    
-    .compra{
-        align-self: flex-end;
+
+    .card-text{
         font-size: 15px;
     }
-    
 }
     
+@media screen and (min-width: 1000px){
+    .card{
+        width: 190px;
+    }
+    .card img{
+        height: 320px;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+}
 
 
 
+@media only screen and (min-width:1200px){
+
+    .header ul li{
+
+        font-size: 50px;
+
+    }
+    
+    .anime{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+/*TITULO PRINCIPAL*/
+
+    .title_anime{
+
+        font-size: 90px;
+        padding-right:150px;
+
+    }
+
+    .title-producto-bts{
+        font-size: 70px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
 
 
 
+/*INICIO PAGINA PRINCIPAL*/
 
+    .contenedor__informacion{
+
+        font-size: 30px;
+        padding-right: 150px;
+        margin: 20px;
+
+    }
+
+    .anime{
+
+        width:100%;
+        height:90vh;
+    }
+
+    .contenedor_principal{
+
+        padding:60px;
+    }
+
+    .title-producto-bts{
+        font-size: 80px;
+    }
+
+}
 
 /*SECCION RESPONSIVE QUIENES SOMOS*/
 
