@@ -114,105 +114,7 @@ nav ul{
     padding:60px;
 }
 
-/**
-
-.cards{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    
-}
-
-
-.card:hover{
-    background-image: linear-gradient(#efa3c8ee, #f4d9e7);
-    transform: scale(1,1,1);
-
-}
-
-.card{
-    transition: 1s;
-}
-
-
-
-
-
-.animemanga div img{
-    width:400px;
-    height:450px;
-    padding:30px;
-    object-fit: cover;
-
-}
-
-.animemanga{
-    background-color: #000000;
-}
-
-
-
-
-.title_card{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
-    color:#ffffff;
-    padding-right:150px;
-    text-align: center;
-}
-
-
-.contenedor__p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color:#ffffff;
-    padding-right: 150px;
-    margin: 20px;
-    text-align: center;
-
-}
-
-.card_title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    color:#ffffff;
-    padding-right: 150px;
-    margin: 20px;
-
-}
-
-.compra{
-
-    color: #4B56D2;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-    background-color: #ffffff;
-    align-self: flex-end;
-    padding: 10px;
-    margin: 10px;
-    transition: 1s;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 3px;
-
-
-}
-
-.compra:hover{
-    color: #000000;
-    background-color: #ADA2FF;
-    transform: scale(1,1,1);
-}
-
-
-**/
-
-
 /*PRODUCTOS CON BTS*/
-
-
-
-
 
 .container{
     max-width: 100%;
@@ -270,7 +172,7 @@ footer{
     background-position: center ;
     background-size: cover;
     width: 100%;
-    height: 30vh;
+    height: 100%;
     padding: 15px;
     display: flex;
 
@@ -697,7 +599,10 @@ footer li{
         font-size: 17px;
     }
     
-    
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
 }
     
 
@@ -757,6 +662,11 @@ footer li{
     .card-text{
         font-size: 15px;
     }
+
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
 }
     
 @media screen and (min-width: 1000px){
@@ -768,6 +678,11 @@ footer li{
     }
     .card-title {
         font-size: 12px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -832,6 +747,11 @@ footer li{
         font-size: 80px;
     }
 
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 /*SECCION RESPONSIVE QUIENES SOMOS*/
@@ -859,15 +779,8 @@ footer li{
     }
 
     .QuienesSomos{
-        background-color: #000000;
-        text-align: center;
-        background-attachment: fixed;
-        background-repeat:no-repeat;
-        background-position: center ;
-        background-size: cover;
-        padding: 10px;
         width: 100%;
-        height: 290vh;
+        height: 100%;
     
     }
     
@@ -896,6 +809,11 @@ footer li{
     
     }
 
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 
@@ -916,18 +834,10 @@ footer li{
     .title_1{
         font-size:40px;
     }
-
+    
     .QuienesSomos{
-        background-color: #000000;
-        text-align: center;
-        background-attachment: fixed;
-        background-repeat:no-repeat;
-        background-position: center ;
-        background-size: cover;
-        padding: 10px;
         width: 100%;
         height: 100%;
-    
     }
     
     .Grilla_QuienesSomos{
@@ -951,8 +861,13 @@ footer li{
     .Grilla_QuienesSomos p{
 
         font-size: 20px;
-        text-align: center;
+        text-align: justify;
     
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -979,18 +894,6 @@ footer li{
         font-size:50px ;
     }
 
-    .QuienesSomos{
-        background-color: #000000;
-        text-align: center;
-        background-attachment: fixed;
-        background-repeat:no-repeat;
-        background-position: center ;
-        background-size: cover;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-    
-    }
     
     .Grilla_QuienesSomos{
         display: flex;
@@ -1012,8 +915,14 @@ footer li{
 
     .Grilla_QuienesSomos p{
 
-        font-size: 25px;
+        font-size: 18px;
+        text-align: justify;
     
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -1041,18 +950,7 @@ footer li{
         font-size:70px ;
     }
 
-    .QuienesSomos{
-        background-color: #000000;
-        text-align: center;
-        background-attachment: fixed;
-        background-repeat:no-repeat;
-        background-position: center ;
-        background-size: cover;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-    
-    }
+
     
     .Grilla_QuienesSomos{
         display: flex;
@@ -1062,8 +960,8 @@ footer li{
     }
     
     .imagen{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     
     .imagen img{
@@ -1074,8 +972,14 @@ footer li{
 
     .Grilla_QuienesSomos p{
 
-        font-size: 30px;
+        font-size: 18px;
+        text-align: justify;
     
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -1102,23 +1006,43 @@ footer li{
         font-size:70px ;
     }
 
-    .QuienesSomos{
-        background-color: #000000;
-        text-align: center;
-        background-attachment: fixed;
-        background-repeat:no-repeat;
-        background-position: center ;
-        background-size: cover;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-    
-    }
     
     .Grilla_QuienesSomos{
         display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'area1 area2 area3'
+        'area4 area5 area6';
     }
     
+    
+    .imagen{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height:100%;
+    }
+
+    .QuienesSomos{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Grilla_QuienesSomos p{
+        text-align:justify;
+        font-size: 20px;
+    
+    }
+
+}
+
+
+@media only screen and (min-width:1200px){
+
     .imagen{
         width: 400px;
         height: 400px;
@@ -1129,16 +1053,7 @@ footer li{
         height:100%;
     }
 
-
-    .Grilla_QuienesSomos p{
-
-        font-size: 30px;
-    
-    }
-
 }
-
-
 
 
 
