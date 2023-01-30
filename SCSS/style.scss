@@ -1,0 +1,16 @@
+@import './base/reset';
+@import './base/var';
+
+
+//import de components
+@import './components/header';
+@import './components/footer';
+
+//imports de layout
+@import './layout/index';
+@import './layout/quienes';
+@import './layout/productos';
+@import './layout/contacto';
+@import './layout/medias';
+
+

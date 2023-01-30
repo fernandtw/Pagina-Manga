@@ -1,0 +1,19 @@
+{
+  "name": "pagina-manga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./SCSS/style.scss ./CSS/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandtw/Pagina-Manga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandtw/Pagina-Manga/issues"
+  },
+  "homepage": "https://github.com/fernandtw/Pagina-Manga#readme"
+}

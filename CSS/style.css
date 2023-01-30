@@ -1,1016 +1,584 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*HEADER*/
-.navbar{
-
-    background-image: linear-gradient(#9772FB,#C0DEFF);
-}
-.nav-redes{
+.navbar {
+  background-image: linear-gradient(#9772FB, #C0DEFF); }
+  .navbar .nav-redes {
     color: #000000;
     padding: 5px;
-    align-self: flex-end;
-}
-.nav-link{
+    align-self: flex-end; }
+  .navbar .nav-link {
     color: #000000;
-    font-family: 'Bebas Neue', cursive;
-}
+    font-family: "Bebas Neue", cursive; }
 
+/*PIE DE PAGINA*/
+footer {
+  background-image: url(../ASSETS/fondo_index.jpg);
+  background-attachment: fixed;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex; }
+  footer h4 {
+    color: #000000;
+    font-family: "Bebas Neue", cursive;
+    font-size: 17px; }
+    footer h4 span {
+      color: #3F0071;
+      font-family: "Bebas Neue", cursive;
+      font-size: 17px; }
+  footer li {
+    font-family: "Bebas Neue", cursive;
+    font-size: 15px;
+    color: #6D67E4;
+    text-align: initial;
+    padding-right: 40px;
+    margin: 10px;
+    text-decoration: none; }
+    footer li a {
+      color: #000000;
+      font-family: "Bebas Neue", cursive;
+      font-size: 15px;
+      text-decoration: none; }
 
 /*MAIN INDEX*/
-
 /*TITULO PRINCIPAL*/
+.title_anime {
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  color: #000000;
+  padding-right: 150px;
+  transition: 1s; }
+  .title_anime .span_color {
+    color: #4C0033; }
 
-.title_anime{
-
-    font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
-    color:black;
-    padding-right:150px;
-    transition: 1s;
-
-}
-
-.title_anime:hover{
-    transform: scale(1,1,1);
-    color: #4B56D2;
-}
-
-
-
-
-
-.span_color{
-
-    color: #4C0033 ;
-
-}
+.title_anime:hover {
+  transform: scale(1, 1, 1);
+  color: #4B56D2; }
 
 /*INICIO PAGINA PRINCIPAL*/
-
-.contenedor__informacion{
-
-    font-family: 'Roboto', sans-serif;
+.anime {
+  background-image: url(../ASSETS/fondo_index.jpg);
+  /* width ancho en ingles */
+  /*height largo en ingles */
+  background-attachment: fixed;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh; }
+  .anime .contenedor__informacion {
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
-    color:black;
+    color: #000000;
     padding-right: 150px;
-    margin: 20px;
+    margin: 20px; }
+  .anime .contenedor_principal {
+    padding: 60px; }
 
-}
+/*SECCION QUIENES SOMOS*/
+/*FONDO*/
+.QuienesSomos {
+  background-color: #000000;
+  text-align: center;
+  background-attachment: fixed;
+  display: grid;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  width: 100%;
+  height: 120vh; }
 
-.anime{
-    background-image: url(../ASSETS/fondo_index.jpg);
-    /* width ancho en ingles */
-    /*height largo en ingles */
-    background-attachment: fixed;
-    display: flex;
-    background-repeat:no-repeat;
-    background-position: center ;
-    background-size: cover;
-    width:100%;
-    height:90vh;
+.Grilla_QuienesSomos {
+  display: grid;
+  padding: 10px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'area1 area2 area3' 'area4 area5 area6'; }
+  .Grilla_QuienesSomos .contenedor_texto {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+    margin: 15px;
+    padding: 10px; }
 
+.imagen {
+  width: 400px;
+  height: 400px; }
+  .imagen img {
+    width: 100%;
+    height: 100%; }
 
-}
+.g1 {
+  grid-area: area1; }
 
-.contenedor_principal{
-    padding:60px;
-}
+.g2 {
+  grid-area: area2; }
+
+.g3 {
+  grid-area: area3; }
+
+.g4 {
+  grid-area: area4; }
+
+.g5 {
+  grid-area: area5; }
+
+.g6 {
+  grid-area: area6; }
+
+.Grilla_QuienesSomos img {
+  transform: scale(1);
+  transition: 0.5s; }
+
+.Grilla_QuienesSomos img:hover {
+  transform: scale(1.1); }
+
+/*TITULO QUIENES SOMOS*/
+.title_1 {
+  background-image: url(../ASSETS/fondo_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000000;
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.6; }
 
 /*PRODUCTOS CON BOOTSTRAP + NUESTROS PRODUCTOS EN CSS*/
+.container {
+  max-width: 100%;
+  height: 100%;
+  padding: 15px; }
 
-.container{
-    max-width: 100%;
-    height: 100%;
-}
+.row {
+  width: 100%;
+  height: 100%; }
 
-.row{
-    width: 100%;
-    height: 100%;
-}
-.title-producto-bts{
-    font-size: 70px;
-    font-family:'Bebas Neue', cursive;
-}
+.title-producto-bts {
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive; }
 
-.card{
-    min-width: 265px;
-    max-width: 330px;
-    transition: 1s;
-}
-.card .card-text{
-    width: 100%;;
-}
-.card img{
-    height: 400px;
-}
-.card .card-body{
+.card {
+  min-width: 265px;
+  max-width: 330px;
+  transition: 1s; }
+  .card .card-text {
+    width: 100%; }
+  .card img {
+    height: 400px; }
+  .card .card-body {
     min-height: 170px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
-}
-.card .btn{
-    height: 40px;
-}
+    justify-content: center; }
+    .card .card-body .btn {
+      height: 40px; }
 
-.row>*{
-    width: auto;
-}
+.row > * {
+  width: auto; }
 
-.container{
-    padding: 15px;
-    
-}
 /* TITULOS PRODUCTOS */
-
-.title_producto{
-    color: #000000;
-    background-image: url(../ASSETS/fondo_index.jpg);
-    background-repeat:no-repeat;
-    background-position: center ;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 90px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 0;
-    line-height: 1.6;
-}
+.title_producto {
+  color: #000000;
+  background-image: url(../ASSETS/fondo_index.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.6; }
 
 /*DISEÑO CARDS DE AMBOS PRODUCTOS*/
-
-.card:hover{
-    background-image: linear-gradient(#86A3B8,#7286D3);
-}
-
-
-
-
-/*PIE DE PAGINA*/
-
-footer{
-    background-image: url(../ASSETS/fondo_index.jpg);
-    background-attachment: fixed;
-    display: flex;
-    background-repeat:no-repeat;
-    background-position: center ;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    display: flex;
-
-
-}
-
-/*FUENTES PIE DE PAGINA*/
-
-footer h4{
-    color: #000000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 17px;
-}
-
-footer h4 span{
-    color: #3F0071;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 17px;
-}
-
-footer a {
-    color: #000000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-    text-decoration: none;
-}
-footer li{
-
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-    color:#6D67E4;
-    text-align:initial;
-    padding-right: 50px;
-    margin: 15px ;
-    text-decoration: none;
-
-}
-
-
-/*SECCION QUIENES SOMOS*/
-
-/*FONDO*/
-.QuienesSomos{
-    background-color: #000000;
-    text-align: center;
-    background-attachment: fixed;
-    display: grid;
-    background-repeat:no-repeat;
-    background-position: center ;
-    background-size: cover;
-    padding: 10px;
-    width: 100%;
-    height: 120vh;
-
-}
-
-.Grilla_QuienesSomos{
-    display: grid;
-    padding: 10px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    'area1 area2 area3'
-    'area4 area5 area6';
-}
-
-.imagen{
-    width: 400px;
-    height: 400px;
-}
-
-.imagen img{
-    width: 100%;
-    height:100%;
-}
-
-.g1{
-    grid-area: area1;
-}
-
-.g2{
-    grid-area: area2;
-}
-
-.g3{
-    grid-area: area3;
-}
-
-.g4{
-    grid-area: area4;
-}
-
-.g5{
-    grid-area: area5;
-}
-
-.g6{
-    grid-area: area6;
-}
-
-
-.Grilla_QuienesSomos img {
-    transform:scale(1);
-    transition: 0.5s;
-}
-
-.Grilla_QuienesSomos img:hover {
-    transform:scale(1.1);
-}
-
-/*TEXTO QUIENES SOMOS*/
-
-.Grilla_QuienesSomos p{
-    font-family: 'Roboto', cursive;
-    font-size: 18px;
-    color: #ffffff;
-    text-align:justify;
-    margin: 15px;
-    padding: 10px;
-
-}
-
-.title_1{
-
-    background-image: url(../ASSETS/fondo_index.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #000000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
-    text-align: center;
-    margin-bottom: 0;
-    line-height: 1.6;
-
-}
-
-.contenedor_texto{
-
-    background-color: #000000;
-    font-family: 'Roboto', cursive;
-    font-size: 20px;
-    color:#ffffff;
-    text-align: justify;
-    padding-right: 150px;
-    margin: 20px;
-
-
-
-}
+.card:hover {
+  background-image: linear-gradient(#86A3B8, #7286D3); }
 
 /*CONTACTO*/
-
-.contacto{
-
-    width: 100%;
-    height: 90vh;
-    background-color: #000000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    text-align: start;
-    color: #ffffff;
-    padding: 10px;
-
-
-
-
-}
-
-/*SOPORTE*/
-
-.soporte{
-
-    display: none;
-}
-
-/*BOTONES Y CAJAS DE TEXTO*/
-
-.contacto input{
+.contacto {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  text-align: start;
+  color: #ffffff;
+  padding: 10px;
+  /*BOTONES Y CAJAS DE TEXTO*/ }
+  .contacto input {
     background-color: #ffffff;
     border-radius: 2%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-    
-
-}
-
-.botones input{
-
-    background-color: #ADA2FF;
-    border-radius: 2%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-
-}
-
-
-.contacto textarea{
+    font-family: "Bebas Neue", cursive;
+    font-size: 15px; }
+  .contacto textarea {
     border: #ffffff;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-
-}
-
-/*CONTACTO FUENTES*/
-
-.contacto p{
-    
+    font-family: "Bebas Neue", cursive;
+    font-size: 15px; }
+  .contacto .titulo_contacto {
+    font-size: 50px;
+    text-align: center; }
+  .contacto p {
     background-color: #000000;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 50px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; }
+  .contacto legend {
+    font-size: 30px; }
 
-}
-
-/*SECCION NUESTROS PRODUCTOS CON BTS*/
-
-
-
-/*RESPONSIVE WEB 320PX*/
+.botones input {
+  background-color: #ADA2FF;
+  border-radius: 2%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 15px; }
 
 /*INICIO CELULAR*/
-
-@media only screen and (max-width:320px){
-
-
-/*INDEX INICIO*/
-
-    .anime{
-        
-        width:100%;
-        height:auto;
-        
-        
-        
-        
-    }
-
-
-    .title_anime{
-
-        font-family: 'Bebas Neue', cursive;
-        font-size: 35px;   
-        padding: 0px;
-        margin: 10px;
-
-    }
-
-
-    .contenedor__informacion{
-        font-size: 17px;
-        text-align: left;
-        padding: 10px;
-        line-height: 27px;
-        margin: 0px;
-    }
-
-    .title-producto-bts{
-        font-size: 25px;
-    }
-
-
-/*FOOTER*/
-
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-
-    .card img{
-        width: 190px;
-        height: 200px;
-    }
-
-    .card{
-        min-width: 0;
-    }
-
-}
-
-
-
-@media only screen and (min-width:321px) and (max-width:339px){
-
-
-    
-    /*INDEX INICIO*/
-    
-    .anime{
-
-        width:100%;
-        height:500px;
-    }
-    
-        
-    
-    
-    .title_anime{
-    
-        font-size: 40px;   
-        padding: 0px;
-        margin: 10px;
-    
-    }
-    
-    
-    .contenedor__informacion{
-        text-align: left;
-        font-size: 20px;
-        line-height: 27px;
-        margin: 0px;
-        padding: 10px;
-    }
-
-    .title-producto-bts{
-        font-size: 30px;
-        margin-right: 15px;
-    
-    }
-
-    .card-title{
-        font-size: 20px;
-    }
-
-    .card-text{
-        font-size: 17px;
-    }
-
-    .card{
-        min-width: 0;
-    }
-
-    .card img{
-        width: 200px;
-        height: 200px;
-    }
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-}
-    
-
-@media only screen and (min-width:340px){
-
-
-    /*INDEX INICIO*/
-    
-    .anime{
-
-        width:100%;
-        height:500px;
-    }
-    
-        
-    
-    
-    .title_anime{
-    
-        font-size: 40px;   
-        padding: 0px;
-        margin: 10px;
-    
-    }
-    
-    
-    .contenedor__informacion{
-        text-align: left;
-        font-size: 20px;
-        line-height: 27px;
-        margin: 0px;
-        padding: 10px;
-    }
-
-    .title-producto-bts{
-        font-size: 30px;
-    
-    }
-
-    .card-title{
-        font-size: 20px;
-    }
-
-    .card-text{
-        font-size: 17px;
-    }
-
-
-}
-
-
-@media only screen and (min-width:400px){
-    .title-producto-bts{
-        font-size: 40px;
-    }
-}
-
-
-@media only screen and (min-width:480px){
-
-    /*INDEX INICIO*/
-    
-    .anime{
-
-        width:100%;
-        height:500px;
-    }
-    
-        
-    
-    
-    .title_anime{
-    
-        font-size: 50px;   
-        padding: 0px;
-        margin: 10px;
-    
-    }
-    
-    
-    .contenedor__informacion{
-        text-align: left;
-        font-size: 25px;
-        line-height: 27px;
-        margin: 0px;
-        padding: 10px;
-    }
-
-    .title-producto-bts{
-        font-size: 50px;
-    }
-    
-    .card-title{
-        font-size: 20px;
-    }
-
-    .card-text{
-        font-size: 15px;
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-}
-    
-@media screen and (min-width: 1000px){
-    .card{
-        width: 250px;
-    }
-    .card img{
-        height: 350px;
-    }
-    .card-title {
-        font-size: 17px;
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-
-@media only screen and (min-width:1200px){
-
-    .anime{
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-/*TITULO PRINCIPAL*/
-
-    .title_anime{
-
-        font-size: 90px;
-        padding-right:150px;
-
-    }
-/*PRODUCTOS BTS*/
-
-    .title-producto-bts{
-        font-size: 70px;
-    }
-
-    .card-title {
-        font-size: 17px;
-    }
-
-
-
-/*INICIO PAGINA PRINCIPAL*/
-
-    .contenedor__informacion{
-
-        font-size: 30px;
-        padding-right: 150px;
-        margin: 20px;
-
-    }
-
-    .anime{
-
-        width:100%;
-        height:90vh;
-    }
-
-    .contenedor_principal{
-
-        padding:60px;
-    }
-
-    .title-producto-bts{
-        font-size: 80px;
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-
-}
+@media only screen and (max-width: 320px) {
+  /*INDEX INICIO*/
+  .anime {
+    width: 100%;
+    height: auto; }
+    .anime .title_anime {
+      font-family: "Bebas Neue", cursive;
+      font-size: 35px;
+      padding: 0px;
+      margin: 10px; }
+    .anime .contenedor__informacion {
+      font-size: 17px;
+      text-align: left;
+      padding: 10px;
+      line-height: 27px;
+      margin: 0px; }
+  .title-producto-bts {
+    font-size: 25px; }
+  /*FOOTER*/
+  .footer {
+    width: 100%;
+    height: 100%; }
+  .card {
+    min-width: 0; }
+    .card img {
+      width: 190px;
+      height: 200px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 339px) {
+  /*INDEX INICIO*/
+  .anime {
+    width: 100%;
+    height: 500px; }
+    .anime .title_anime {
+      font-size: 40px;
+      padding: 0px;
+      margin: 10px; }
+    .anime .contenedor__informacion {
+      text-align: left;
+      font-size: 20px;
+      line-height: 27px;
+      margin: 0px;
+      padding: 10px; }
+  .title-producto-bts {
+    font-size: 30px;
+    margin-right: 15px; }
+  .card {
+    min-width: 0; }
+    .card .card-title {
+      font-size: 20px; }
+    .card .card-text {
+      font-size: 17px; }
+    .card img {
+      width: 200px;
+      height: 200px; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
+
+@media only screen and (min-width: 340px) {
+  /*INDEX INICIO*/
+  .anime {
+    width: 100%;
+    height: 500px; }
+    .anime .title_anime {
+      font-size: 40px;
+      padding: 0px;
+      margin: 10px; }
+    .anime .contenedor__informacion {
+      text-align: left;
+      font-size: 20px;
+      line-height: 27px;
+      margin: 0px;
+      padding: 10px; }
+  .title-producto-bts {
+    font-size: 30px; }
+  .card .card-title {
+    font-size: 20px; }
+  .card .card-text {
+    font-size: 17px; } }
+
+@media only screen and (min-width: 400px) {
+  .title-producto-bts {
+    font-size: 40px; } }
+
+@media only screen and (min-width: 480px) {
+  /*INDEX INICIO*/
+  .anime {
+    width: 100%;
+    height: 500px; }
+    .anime .title_anime {
+      font-size: 50px;
+      padding: 0px;
+      margin: 10px; }
+    .anime .contenedor__informacion {
+      text-align: left;
+      font-size: 25px;
+      line-height: 27px;
+      margin: 0px;
+      padding: 10px; }
+  .title-producto-bts {
+    font-size: 50px; }
+  .card .card-title {
+    font-size: 20px; }
+  .card .card-text {
+    font-size: 15px; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
+
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 250px; }
+    .card .card img {
+      height: 350px; }
+    .card .card-title {
+      font-size: 17px; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .anime {
+    width: 100%;
+    height: 90vh;
+    /*TITULO PRINCIPAL E INICIO*/ }
+    .anime .title_anime {
+      font-size: 90px;
+      padding-right: 150px; }
+    .anime .contenedor__informacion {
+      font-size: 30px;
+      padding-right: 150px;
+      margin: 20px; }
+    .anime .contenedor_principal {
+      padding: 60px; }
+  /*PRODUCTOS BTS*/
+  .card-title {
+    font-size: 17px; }
+  /*INICIO PAGINA PRINCIPAL*/
+  .title-producto-bts {
+    font-size: 80px; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
 
 /*SECCION RESPONSIVE QUIENES SOMOS*/
+@media only screen and (min-width: 320px) {
+  .title_1 {
+    font-size: 40px; }
+  .QuienesSomos {
+    width: 100%;
+    height: 100%; }
+  .Grilla_QuienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .Grilla_QuienesSomos p {
+      font-size: 18px;
+      text-align: center; }
+  .imagen {
+    width: 250px;
+    height: 250px;
+    padding: 10px; }
+    .imagen img {
+      width: 100%;
+      height: 100%; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
 
+@media only screen and (min-width: 360px) {
+  .title_1 {
+    font-size: 40px; }
+  .QuienesSomos {
+    width: 100%;
+    height: 100%; }
+  .Grilla_QuienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .Grilla_QuienesSomos p {
+      font-size: 20px;
+      text-align: justify; }
+  .imagen {
+    width: 300px;
+    height: 300px;
+    padding: 10px; }
+    .imagen img {
+      width: 100%;
+      height: 100%; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
 
+@media only screen and (min-width: 480px) {
+  .title_1 {
+    font-size: 50px; }
+  .Grilla_QuienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .Grilla_QuienesSomos p {
+      font-size: 18px;
+      text-align: justify; }
+  .imagen {
+    width: 300px;
+    height: 300px; }
+    .imagen .imagen img {
+      width: 100%;
+      height: 100%; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width: 720px) {
+  .title_1 {
+    font-size: 70px; }
+  .Grilla_QuienesSomos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'area1 area1 ..' 'area2 area3 ..' 'area4 area4 ..'  'area5 area6 ..'; }
+    .Grilla_QuienesSomos p {
+      font-size: 20px;
+      text-align: justify; }
+  .imagen {
+    width: 320px;
+    height: 320px;
+    padding: 20px; }
+    .imagen img {
+      width: 100%;
+      height: 100%; }
+  .QuienesSomos {
+    width: 100%;
+    height: 100%; }
+  .footer {
+    width: 100%;
+    height: 100%; } }
 
+@media only screen and (min-width: 1020px) {
+  .title_1 {
+    font-size: 70px; }
+  .Grilla_QuienesSomos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'area1 area1 ..' 'area2 area3 ..' 'area4 area4 ..'  'area5 area6 ..'; }
+    .Grilla_QuienesSomos p {
+      text-align: justify;
+      font-size: 20px; }
+  .imagen {
+    width: 400px;
+    height: 400px; }
+    .imagen img {
+      width: 100%;
+      height: 100%; }
+  .QuienesSomos {
+    width: 100%;
+    height: 100%; } }
 
-    .title_1{
-        font-size:40px;
-    }
-
-    .QuienesSomos{
-        width: 100%;
-        height: 100%;
-    
-    }
-    
-    .Grilla_QuienesSomos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .imagen{
-        width: 250px;
-        height: 250px;
-        padding: 10px;
-    }
-    
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-
-    .Grilla_QuienesSomos p{
-
-        font-size: 18px;
-        text-align: center;
-    
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-
-}
-
-
-@media only screen and (min-width:360px){
-    
-
-    .title_1{
-        font-size:40px;
-    }
-    
-    .QuienesSomos{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .Grilla_QuienesSomos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .imagen{
-        width: 300px;
-        height: 300px;
-        padding: 10px;
-    }
-    
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-
-    .Grilla_QuienesSomos p{
-
-        font-size: 20px;
-        text-align: justify;
-    
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-
-
-@media only screen and (min-width:480px){
-
-
-    .title_1{
-        font-size:50px ;
-    }
-
-    
-    .Grilla_QuienesSomos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .imagen{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-
-    .Grilla_QuienesSomos p{
-
-        font-size: 18px;
-        text-align: justify;
-    
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-
-}
-
-
-
-
-@media only screen and (min-width:720px){
-
-
-    .title_1{
-        font-size:70px ;
-    }
-
-
-    
-    .Grilla_QuienesSomos{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        'area1 area1 ..'
-        'area2 area3 ..'
-        'area4 area4 ..' 
-        'area5 area6 ..';
-        
-    }
-    
-    .imagen{
-        width: 320px;
-        height: 320px;
-        padding: 20px;
-    }
-    .QuienesSomos{
-        width: 100%;
-        height: 100%;
-    }
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-
-    .Grilla_QuienesSomos p{
-
-        font-size: 20px;
-        text-align: justify;
-    
-    }
-
-    .footer{
-        width: 100%;
-        height: 100%;
-    }
-
-
-
-
-}
-
-
-
-@media only screen and (min-width:1020px){
-
-
-    .title_1{
-        font-size:70px ;
-    }
-
-    
-    .Grilla_QuienesSomos{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        'area1 area1 ..'
-        'area2 area3 ..'
-        'area4 area4 ..' 
-        'area5 area6 ..';
-    }
-    
-    
-    .imagen{
-        width: 400px;
-        height: 400px;
-    }
-    
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-    .QuienesSomos{
-        width: 100%;
-        height: 100%;
-    }
-
-    .Grilla_QuienesSomos p{
-        text-align:justify;
-        font-size: 20px;
-    
-    }
-
-}
-
-
-@media only screen and (min-width:1200px){
-
-    .imagen{
-        width: 400px;
-        height: 400px;
-    }
-    
-    .imagen img{
-        width: 100%;
-        height:100%;
-    }
-
-
-    .Grilla_QuienesSomos{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        'area1 area2 area3'
-        'area4 area5 area6';
-    }
-
-}
-
-
+@media only screen and (min-width: 1200px) {
+  .imagen {
+    width: 400px;
+    height: 400px; }
+    .imagen img {
+      width: 100%;
+      height: 100%; }
+  .Grilla_QuienesSomos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'area1 area2 area3' 'area4 area5 area6'; } }
 
 /*INICIO RESPONSIVE SECCION NUESTROS PRODUCTOS*/
+@media only screen and (min-width: 320px) {
+  .card {
+    min-width: 0; }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .title_producto {
+    font-size: 50px; } }
 
+/*CONTACTO*/
+@media only screen and (min-width: 320px) and (max-width: 349px) {
+  .contacto .titulo_contacto {
+    font-size: 25px; }
+  .contacto .contacto input {
+    font-size: 12px; }
+  .contacto .botones input {
+    font-size: 12px; }
+  .contacto .contacto textarea {
+    font-size: 12px; }
+  .contacto .contacto p {
+    text-align: center;
+    color: #ffffff; }
+  .contacto label {
+    font-size: 20px; }
+  .contacto legend {
+    font-size: 20px; } }
 
-@media only screen and (min-width:320px){
-
-    .card img{
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .card{
-        min-width: 0;
-    }
-
-    .title_producto{
-        font-size: 50px;
-    }
-
-}
-
-
-/*MENSAJE DE SOPORTE PARA CELULAR*/
-
-@media only screen and (min-width:320px) and (max-width:1029px){
-
-    .soporte{
-        display: flex;
-        background: radial-gradient(circle, #cd18ff40, #3940c4),url(../ASSETS/fondo-soporte.jpg);
-        background-size: cover;
-        background-position: center;
-        color: #ffffff;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 30px;
-        padding: 50px;
-        height: 100vh;
-    }
-
-    .contacto{
-        display: none;
-    }
-
-
-}
+@media only screen and (min-width: 350px) and (max-width: 522px) {
+  .contacto {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+    /*BOTONES Y CAJAS DE TEXTO*/
+    /*CONTACTO FUENTES*/ }
+    .contacto .titulo_contacto {
+      font-size: 30px;
+      text-align: center; }
+    .contacto input {
+      font-size: 15px; }
+    .contacto .botones input {
+      font-size: 15px; }
+    .contacto textarea {
+      font-size: 15px; }
+    .contacto p {
+      text-align: center;
+      color: #ffffff; }
+    .contacto legend {
+      font-size: 25px; }
+    .contacto label {
+      font-size: 20px; } }

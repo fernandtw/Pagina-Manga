@@ -1,0 +1,684 @@
+/*INICIO CELULAR*/
+
+@media only screen and (max-width:320px){
+
+
+    /*INDEX INICIO*/
+    
+        .anime{
+            
+            width:100%;
+            height:auto;
+            
+
+            .title_anime{
+    
+                font-family: $font-family;
+                font-size: 35px;   
+                padding: 0px;
+                margin: 10px;
+        
+            }
+        
+        
+            .contenedor__informacion{
+                font-size: 17px;
+                text-align: left;
+                padding: 10px;
+                line-height: 27px;
+                margin: 0px;
+            }
+            
+            
+            
+        }
+    
+        .title-producto-bts{
+            font-size: 25px;
+        }
+    
+    
+    /*FOOTER*/
+    
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+        .card{
+            min-width: 0;
+            img{
+                width: 190px;
+                height: 200px;
+            }
+        }
+    
+    }
+    
+    
+    
+    @media only screen and (min-width:321px) and (max-width:339px){
+    
+    
+        
+        /*INDEX INICIO*/
+        
+        .anime{
+    
+            width:100%;
+            height:500px;
+
+            .title_anime{
+        
+                font-size: 40px;   
+                padding: 0px;
+                margin: 10px;
+            
+            }
+            
+            
+            .contenedor__informacion{
+                text-align: left;
+                font-size: 20px;
+                line-height: 27px;
+                margin: 0px;
+                padding: 10px;
+            }
+        }
+        
+            
+    
+    
+        .title-producto-bts{
+            font-size: 30px;
+            margin-right: 15px;
+        
+        }
+    
+        .card{
+            min-width: 0;
+
+            .card-title{
+                font-size: 20px;
+            }
+        
+            .card-text{
+                font-size: 17px;
+            }
+
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    }
+        
+    
+    @media only screen and (min-width:340px){
+    
+    
+        /*INDEX INICIO*/
+        
+        .anime{
+    
+            width:100%;
+            height:500px;
+
+            .title_anime{
+        
+                font-size: 40px;   
+                padding: 0px;
+                margin: 10px;
+            
+            }
+            
+            
+            .contenedor__informacion{
+                text-align: left;
+                font-size: 20px;
+                line-height: 27px;
+                margin: 0px;
+                padding: 10px;
+            }
+        }
+        
+    
+        .title-producto-bts{
+            font-size: 30px;
+        
+        }
+        .card{
+
+            .card-title{
+                font-size: 20px;
+            }
+        
+            .card-text{
+                font-size: 17px;
+            }
+
+        }
+    
+    }
+    
+    
+    @media only screen and (min-width:400px){
+
+        .title-producto-bts{
+            font-size: 40px;
+        }
+    }
+    
+    
+    @media only screen and (min-width:480px){
+    
+        /*INDEX INICIO*/
+        
+        .anime{
+    
+            width:100%;
+            height:500px;
+
+            .title_anime{
+        
+                font-size: 50px;   
+                padding: 0px;
+                margin: 10px;
+            
+            }
+            
+            
+            .contenedor__informacion{
+                text-align: left;
+                font-size: 25px;
+                line-height: 27px;
+                margin: 0px;
+                padding: 10px;
+            }
+        }
+    
+        .title-producto-bts{
+            font-size: 50px;
+        }
+
+        .card{
+            .card-title{
+                font-size: 20px;
+            }
+        
+            .card-text{
+                font-size: 15px;
+            }
+        
+        }
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    }
+        
+    @media screen and (min-width: 1000px){
+
+        .card{
+            width: 250px;
+
+            .card img{
+                height: 350px;
+            }
+            .card-title {
+                font-size: 17px;
+            }
+        }
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    
+    
+    @media only screen and (min-width:1200px){
+    
+        .anime{
+    
+            width: 100%;
+            height: 90vh;
+
+            /*TITULO PRINCIPAL E INICIO*/
+    
+            .title_anime{
+    
+                font-size: 90px;
+                padding-right:150px;
+        
+            }
+
+            .contenedor__informacion{
+    
+                font-size: 30px;
+                padding-right: 150px;
+                margin: 20px;
+        
+            }
+        
+            .contenedor_principal{
+        
+                padding:60px;
+            }
+    
+        }
+
+    /*PRODUCTOS BTS*/
+    
+        .card-title {
+            font-size: 17px;
+        }
+    
+    /*INICIO PAGINA PRINCIPAL*/
+    
+        .title-producto-bts{
+            font-size: 80px;
+        }
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+    
+    /*SECCION RESPONSIVE QUIENES SOMOS*/
+    
+    
+    
+    @media only screen and (min-width:320px){
+    
+    
+        .title_1{
+            font-size:40px;
+        }
+    
+        .QuienesSomos{
+            width: 100%;
+            height: 100%;
+        
+        }
+        
+        .Grilla_QuienesSomos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+    
+                font-size: 18px;
+                text-align: center;
+            
+            }
+        }
+        
+        .imagen{
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+        
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+    
+    
+    @media only screen and (min-width:360px){
+        
+    
+        .title_1{
+            font-size:40px;
+        }
+        
+        .QuienesSomos{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .Grilla_QuienesSomos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+    
+                font-size: 20px;
+                text-align: justify;
+            
+            }
+        }
+        
+        .imagen{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+        
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    
+    
+    
+    @media only screen and (min-width:480px){
+    
+    
+        .title_1{
+            font-size:50px ;
+        }
+    
+        
+        .Grilla_QuienesSomos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+    
+                font-size: 18px;
+                text-align: justify;
+            
+            }
+        }
+        
+        .imagen{
+            width: 300px;
+            height: 300px;
+
+            .imagen img{
+                width: 100%;
+                height:100%;
+            }
+        }
+        
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+    
+    
+    
+    
+    @media only screen and (min-width:720px){
+    
+    
+        .title_1{
+            font-size:70px ;
+        }
+    
+    
+        
+        .Grilla_QuienesSomos{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            'area1 area1 ..'
+            'area2 area3 ..'
+            'area4 area4 ..' 
+            'area5 area6 ..';
+
+            p{
+    
+                font-size: 20px;
+                text-align: justify;
+            
+            }
+
+        }
+        
+        .imagen{
+            width: 320px;
+            height: 320px;
+            padding: 20px;
+
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+
+
+        .QuienesSomos{
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+        .footer{
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+    
+    
+    }
+    
+    
+    
+    @media only screen and (min-width:1020px){
+    
+    
+        .title_1{
+            font-size:70px ;
+        }
+    
+        
+        .Grilla_QuienesSomos{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            'area1 area1 ..'
+            'area2 area3 ..'
+            'area4 area4 ..' 
+            'area5 area6 ..';
+
+            p{
+                text-align:justify;
+                font-size: 20px;
+            
+            }
+        }
+        
+        
+        .imagen{
+            width: 400px;
+            height: 400px;
+
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+        
+    
+        .QuienesSomos{
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+    }
+    
+    
+    @media only screen and (min-width:1200px){
+    
+        .imagen{
+            width: 400px;
+            height: 400px;
+
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+        
+    
+    
+        .Grilla_QuienesSomos{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6';
+        }
+    
+    }
+    
+    
+    
+    /*INICIO RESPONSIVE SECCION NUESTROS PRODUCTOS*/
+    
+    
+    @media only screen and (min-width:320px){
+    
+    
+        .card{
+            min-width: 0;
+
+            img{
+    
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .title_producto{
+            font-size: 50px;
+        }
+    
+    }
+    
+    
+    /*CONTACTO*/
+    
+    
+@media only screen and (min-width: 320px) and (max-width: 349px) {
+    
+    .contacto {
+
+        .titulo_contacto{
+            font-size: 25px;
+        }
+        
+        .contacto input {
+            font-size: 12px;
+        }
+        
+        
+        .botones input {
+            font-size: 12px;
+        }
+        
+        .contacto textarea {
+            font-size: 12px;
+        }
+        
+        .contacto p {
+            text-align: center;
+            color: $font-color-2;
+        }
+        
+        
+        label{
+            font-size: 20px;
+        }
+        
+        legend{
+            font-size: 20px;
+        }
+
+    }
+    
+    
+    
+}
+    
+    
+@media only screen and (min-width: 350px) and (max-width: 522px) {
+    
+    
+    .contacto {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        gap: 20px;
+
+        .titulo_contacto{
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        /*BOTONES Y CAJAS DE TEXTO*/
+        
+        input {
+            font-size: 15px;
+        }
+        .botones input {
+            font-size: 15px;
+        }
+        
+        textarea {
+            font-size: 15px;
+        }
+        
+        /*CONTACTO FUENTES*/
+        p {
+            text-align: center;
+            color:$font-color-2;
+        }
+        
+        legend{
+            font-size: 25px;
+        }
+        
+        label{
+            font-size: 20px;
+        }
+    }
+    
+    
+    
+}
