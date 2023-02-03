@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
@@ -61,10 +60,9 @@ footer {
   transition: 1s; }
   .title_anime .span_color {
     color: #4C0033; }
-
-.title_anime:hover {
-  transform: scale(1, 1, 1);
-  color: #4B56D2; }
+  .title_anime:hover {
+    transform: scale(1, 1, 1);
+    color: #4B56D2; }
 
 /*INICIO PAGINA PRINCIPAL*/
 .anime {
@@ -114,13 +112,16 @@ footer {
     text-align: justify;
     margin: 15px;
     padding: 10px; }
+  .Grilla_QuienesSomos img:hover {
+    transform: scale(1.1); }
 
 .imagen {
   width: 400px;
   height: 400px; }
   .imagen img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: 0.5s; }
 
 .g1 {
   grid-area: area1; }
@@ -139,13 +140,6 @@ footer {
 
 .g6 {
   grid-area: area6; }
-
-.Grilla_QuienesSomos img {
-  transform: scale(1);
-  transition: 0.5s; }
-
-.Grilla_QuienesSomos img:hover {
-  transform: scale(1.1); }
 
 /*TITULO QUIENES SOMOS*/
 .title_1 {
@@ -166,13 +160,14 @@ footer {
   height: 100%;
   padding: 15px; }
 
+.title-producto-bts {
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 0; }
+
 .row {
   width: 100%;
   height: 100%; }
-
-.title-producto-bts {
-  font-size: 70px;
-  font-family: "Bebas Neue", cursive; }
 
 .card {
   min-width: 265px;
@@ -190,11 +185,24 @@ footer {
     justify-content: center; }
     .card .card-body .btn {
       height: 40px; }
+  .card:hover {
+    background-image: linear-gradient(#86A3B8, #7286D3); }
 
 .row > * {
   width: auto; }
 
 /* TITULOS PRODUCTOS */
+.title-mangas {
+  color: #ffffff;
+  background-color: #000000;
+  width: 100%;
+  height: 90px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.6; }
+
 .title_producto {
   color: #000000;
   background-image: url(../ASSETS/fondo_index.jpg);
@@ -210,9 +218,17 @@ footer {
   margin-bottom: 0;
   line-height: 1.6; }
 
-/*DISEÑO CARDS DE AMBOS PRODUCTOS*/
-.card:hover {
-  background-image: linear-gradient(#86A3B8, #7286D3); }
+.carousel-item {
+  width: 100%;
+  height: 500px; }
+  .carousel-item img {
+    width: 100%;
+    height: 100%; }
+
+.title-productos {
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 0; }
 
 /*CONTACTO*/
 .contacto {
@@ -307,6 +323,8 @@ footer {
       font-size: 17px; }
     .card img {
       width: 200px;
+      height: 200px;
+      width: 200px;
       height: 200px; }
   .footer {
     width: 100%;
@@ -372,7 +390,9 @@ footer {
       font-size: 17px; }
   .footer {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  .title-producto-bts {
+    font-size: 70px; } }
 
 @media only screen and (min-width: 1200px) {
   .anime {
@@ -380,7 +400,7 @@ footer {
     height: 90vh;
     /*TITULO PRINCIPAL E INICIO*/ }
     .anime .title_anime {
-      font-size: 90px;
+      font-size: 100px;
       padding-right: 150px; }
     .anime .contenedor__informacion {
       font-size: 30px;
@@ -530,7 +550,7 @@ footer {
     grid-template-areas: 'area1 area2 area3' 'area4 area5 area6'; } }
 
 /*INICIO RESPONSIVE SECCION NUESTROS PRODUCTOS*/
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 1020px) {
   .card {
     min-width: 0; }
     .card img {
@@ -538,7 +558,13 @@ footer {
       height: 100%;
       object-fit: cover; }
   .title_producto {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .carousel-item {
+    width: 100%;
+    height: 100%; }
+    .carousel-item img {
+      width: 100%;
+      height: 100%; } }
 
 /*CONTACTO*/
 @media only screen and (min-width: 320px) and (max-width: 349px) {

@@ -50,12 +50,11 @@
         .card{
             min-width: 0;
             img{
-                width: 190px;
-                height: 200px;
+                @include imagen(190px,200px);
             }
         }
     
-    }
+}
     
     
     
@@ -109,6 +108,7 @@
             }
 
             img{
+                @include imagen(200px,200px);
                 width: 200px;
                 height: 200px;
             }
@@ -121,7 +121,7 @@
     }
         
     
-    @media only screen and (min-width:340px){
+@media only screen and (min-width:340px){
     
     
         /*INDEX INICIO*/
@@ -166,18 +166,18 @@
 
         }
     
-    }
+}
     
     
-    @media only screen and (min-width:400px){
+@media only screen and (min-width:400px){
 
         .title-producto-bts{
             font-size: 40px;
         }
-    }
+}
     
     
-    @media only screen and (min-width:480px){
+@media only screen and (min-width:480px){
     
         /*INDEX INICIO*/
         
@@ -223,9 +223,9 @@
             width: 100%;
             height: 100%;
         }
-    }
+}
         
-    @media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px){
 
         .card{
             width: 250px;
@@ -242,11 +242,15 @@
             width: 100%;
             height: 100%;
         }
-    }
+
+        .title-producto-bts{
+            font-size: 70px;
+        }
+}
     
     
     
-    @media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px){
     
         .anime{
     
@@ -257,7 +261,7 @@
     
             .title_anime{
     
-                font-size: 90px;
+                font-size: 100px;
                 padding-right:150px;
         
             }
@@ -294,13 +298,13 @@
             height: 100%;
         }
     
-    }
+}
     
     /*SECCION RESPONSIVE QUIENES SOMOS*/
     
     
     
-    @media only screen and (min-width:320px){
+@media only screen and (min-width:320px){
     
     
         .title_1{
@@ -328,13 +332,11 @@
         }
         
         .imagen{
-            width: 250px;
-            height: 250px;
+            @include imagen(250px,250px);
             padding: 10px;
 
             img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%);
             }
         }
         
@@ -344,10 +346,10 @@
             height: 100%;
         }
     
-    }
+}
     
     
-    @media only screen and (min-width:360px){
+@media only screen and (min-width:360px){
         
     
         .title_1{
@@ -374,13 +376,11 @@
         }
         
         .imagen{
-            width: 300px;
-            height: 300px;
+            @include imagen(300px,300px);
             padding: 10px;
 
             img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%);
             }
         }
         
@@ -389,12 +389,12 @@
             width: 100%;
             height: 100%;
         }
-    }
+}
     
     
     
     
-    @media only screen and (min-width:480px){
+@media only screen and (min-width:480px){
     
     
         .title_1{
@@ -417,12 +417,10 @@
         }
         
         .imagen{
-            width: 300px;
-            height: 300px;
+            @include imagen(300px,300px);
 
             .imagen img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%)
             }
         }
         
@@ -432,12 +430,12 @@
             height: 100%;
         }
     
-    }
+}
     
     
     
     
-    @media only screen and (min-width:720px){
+@media only screen and (min-width:720px){
     
     
         .title_1{
@@ -466,13 +464,11 @@
         }
         
         .imagen{
-            width: 320px;
-            height: 320px;
+            @include imagen(320px,320px);
             padding: 20px;
 
             img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%)
             }
         }
 
@@ -491,11 +487,11 @@
     
     
     
-    }
+}
     
     
     
-    @media only screen and (min-width:1020px){
+@media only screen and (min-width:1020px){
     
     
         .title_1{
@@ -522,12 +518,10 @@
         
         
         .imagen{
-            width: 400px;
-            height: 400px;
+            @include imagen(400px,400px);
 
             img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%);
             }
         }
         
@@ -538,18 +532,16 @@
         }
     
     
-    }
+}
     
     
-    @media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px){
     
         .imagen{
-            width: 400px;
-            height: 400px;
+            @include imagen(400px,400px);
 
             img{
-                width: 100%;
-                height:100%;
+                @include imagen(100%,100%);
             }
         }
         
@@ -564,14 +556,14 @@
             'area4 area5 area6';
         }
     
-    }
+}
     
     
     
     /*INICIO RESPONSIVE SECCION NUESTROS PRODUCTOS*/
     
     
-    @media only screen and (min-width:320px){
+@media only screen and (min-width:320px) and (max-width:1020px){
     
     
         .card{
@@ -579,20 +571,28 @@
 
             img{
     
-                width: 100%;
-                height: 100%;
+                @include imagen(100%,100%);
                 object-fit: cover;
             }
         }
-    
+
         .title_producto{
             font-size: 50px;
         }
+
+        .carousel-item{
+            width: 100%;
+            height: 100%;
+        
+            img{
+                @include imagen(100%,100%);
+            }
+        }
     
-    }
-    
-    
-    /*CONTACTO*/
+}
+
+
+/*CONTACTO*/
     
     
 @media only screen and (min-width: 320px) and (max-width: 349px) {

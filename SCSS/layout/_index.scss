@@ -16,13 +16,15 @@
     
     }
 
+    &:hover{
+        transform: scale(1,1,1);
+        color: #4B56D2;
+
+    }
+
 
 }
 
-.title_anime:hover{
-    transform: scale(1,1,1);
-    color: #4B56D2;
-}
 
 
 
